@@ -31,8 +31,8 @@ public class BasicParser {
             rule(IfStatement.class).sep("if").ast(expr).ast(block)
                     .option(rule().sep("else").ast(block)),
             rule(WhileStatement.class).sep("while").ast(expr).ast(block),
-            simple
-            );
+            simple);
+
 
     Parser program = rule().or(statement, rule(NullStatement.class))
             .sep(";", Token.EOL);

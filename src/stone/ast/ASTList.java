@@ -35,7 +35,7 @@ public class ASTList extends ASTree {
     }
 
     public String location() {
-        for (ASTree t: children) {
+        for(ASTree t: children) {
             String s = t.location();
             if (s != null) {
                 return s;

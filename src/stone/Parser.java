@@ -12,7 +12,6 @@ import java.util.HashSet;
 import java.util.List;
 
 public class Parser {
-
     protected static abstract class Element {
         protected abstract void parse(Lexer lexer, List<ASTree> res) throws ParseException;
         protected abstract boolean match(Lexer lexer) throws ParseException;
