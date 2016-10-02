@@ -1,4 +1,8 @@
-package stone;
+package executor;
+
+import stone.Lexer;
+import stone.ParseException;
+import stone.Token;
 
 public class LexerRunner {
     public static void main(String[] args) throws ParseException {

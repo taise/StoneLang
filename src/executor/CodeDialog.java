@@ -1,4 +1,4 @@
-package stone;
+package executor;
 
 import javax.swing.*;
 import java.io.*;
