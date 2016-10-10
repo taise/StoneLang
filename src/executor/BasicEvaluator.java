@@ -1,14 +1,9 @@
 package executor;
 
-import com.sun.tools.classfile.StackMapTable_attribute;
-import com.sun.tools.corba.se.idl.constExpr.*;
-import com.sun.tools.doclint.Env;
-import com.sun.tools.javac.code.Type;
 import javassist.gluonj.*;
 import stone.StoneException;
 import stone.Token;
 import stone.ast.*;
-import stone.ast.BinaryExpr;
 
 import java.util.List;
 
@@ -21,7 +16,7 @@ import java.util.List;
         public abstract Object eval(Environment env);
     }
 
-    @Reviser public static abstract class ASTListEx extends ASTList {
+    @Reviser public static class ASTListEx extends ASTList {
         public ASTListEx(List<ASTree> list) {
             super(list);
         }
@@ -31,7 +26,7 @@ import java.util.List;
         }
     }
 
-    @Reviser public static abstract class ASTLeafEx extends ASTLeaf {
+    @Reviser public static class ASTLeafEx extends ASTLeaf {
         public ASTLeafEx(Token token) {
             super(token);
         }
